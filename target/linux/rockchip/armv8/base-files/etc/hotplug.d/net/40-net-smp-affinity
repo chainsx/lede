@@ -29,6 +29,7 @@ set_interface_core() {
 }
 
 case "$(board_name)" in
+100ask,dshanpi-a1|\
 armsom,sige1|\
 armsom,sige3|\
 armsom,sige5|\

@@ -42,6 +42,7 @@ define U-Boot/evb-rk3576
   BUILD_SUBTARGET:=armv8
   NAME:=RK3576 Evaluation
   BUILD_DEVICES:= \
+    100ask_dshanpia1 \
     armsom_sige5 \
     ariaboard_photonicat2 \
     friendlyarm_nanopi-m5 \

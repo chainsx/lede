@@ -32,6 +32,16 @@ define Device/ariaboard_photonicat2
 endef
 TARGET_DEVICES += ariaboard_photonicat2
 
+define Device/100ask_dshanpia1
+  DEVICE_VENDOR := 100ASK
+  DEVICE_MODEL := DshanPi A1
+  SOC := rk3576
+  DEVICE_DTS := rockchip/rk3576-100ask-dshanpi-a1
+  UBOOT_DEVICE_NAME := evb-rk3576
+  IMAGE/sysupgrade.img.gz := boot-common | boot-script rk3576 | pine64-img | gzip | append-metadata
+endef
+TARGET_DEVICES += 100ask_dshanpia1
+
 define Device/armsom_sige1
   DEVICE_VENDOR := ArmSoM
   DEVICE_MODEL := Sige1
